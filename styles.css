@@ -182,6 +182,11 @@ img {
     height: 40%;
     margin-bottom: 10px;   
 }
+#info ul li{
+    display: inline;
+    color: white;
+    padding-right: 20px;
+}
 
 #logo-parte-1 {
     width: 30vw;

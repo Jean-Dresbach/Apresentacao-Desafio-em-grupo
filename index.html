@@ -4,11 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presentation - Group Challenge</title>
+    <link href='https://fonts.googleapis.com/css?family=Marvel' rel='stylesheet'>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <main>
-        <img id="image-1" src="./images/portal-quantum-realm.jpeg" alt="portal-quantum-realm">
+        <button id="button" onclick="pauseAudio()" type="button" style="width: 100px; height: 100px;">enviar</button>
+        <audio id="audio">
+            <source src="./music/kang-bang.mp3" type="audio/mpeg">
+            <source src="horse.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+        <div id="cast">
+            <div>
+                <p>PAUL</p>
+                <p><strong>RUDD</strong></p>
+            </div>
+            <div>
+                <p>EVANGELINE</p>
+                <p><strong>LILLY</strong></p>
+            </div>
+            <div>
+                <p>JONATHAN</p>
+                <p><strong>MAJORS</strong></p>
+            </div>
+            <div>
+                <p>KATHRYN</p>
+                <p><strong>NEWTON</strong></p>
+            </div>
+            <div>
+                <p>BILL</p>
+                <p><strong>MURRAY</strong></p>
+            </div>
+            <div>
+                <p>MICHELLE</p>
+                <div>
+                    <small>with</small>
+                    <p><strong>PFEIFFER</strong></p>
+                </div>
+            </div>
+            <div>
+                <p>MICHAEL</p>
+                <div>
+                    <small>and</small>
+                    <p><strong>DOUGLAS</strong></p>
+                </div>
+            </div>
+        </div>
+        <div id="container-imge-1">
+            <img id="image-1" src="./images/portal-quantum-realm.jpeg" alt="portal-quantum-realm">
+        </div>
         <img id="image-2" src="./images/image-transition-1.png" alt="quantum-real-transition-1">
         <img id="image-3" src="./images/image-transition-2.jpeg" alt="quantum-real-transition-2">
         <img id="image-4" src="./images/poster.jpg" alt="poster quantumania">
@@ -16,14 +61,9 @@
         <div id="info">
             <img id="logo-parte-1" src="./images/logo.png" alt="quantumania logo">
             <img id="logo-parte-2"src="./images/logo-parte-2.png" alt="quantumania logo">
-            <img id="logo-parte-3" src="./images/poster-date.png" alt="quantumania date">
-            <ul>
-                <li id="ant-man">PAUL RUDD</li>
-                <li>MICHELLE PFEIFFER</li>
-                <li>KATHRYN NEWTON</li>
-                <li>JONATHAN MAJORS</li>
-            </ul>
+            <img id="logo-parte-3" src="./images/text-1696476095331.png" alt="quantumania date">
         </div>
     </main>
+    <script src="./main.js"></script>
 </body>
 </html>

@@ -29,7 +29,6 @@ button {
     cursor: pointer;
     overflow: hidden;
     border-radius: 50%;
-    filter: hue-rotate(-200deg);
 }
 
 button:hover {

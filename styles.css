@@ -21,8 +21,24 @@ main {
     background-color: white;
 }
 
-#button {
+button {
     z-index: 99;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%;
+    filter: hue-rotate(-200deg);
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+button > img {
+    width: 50px;
+    height: 50px;
 }
 
 #cast {
@@ -265,5 +281,21 @@ img {
     #logo-parte-3 {
         width: auto;
         height: 30px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    button {
+        bottom: 10px;
+    }
+    #info {
+        bottom: 70px;
+    }
+}
+
+@media screen and (min-width: 801px){
+    button {
+        top: 20px;
+        right: 30px;
     }
 }

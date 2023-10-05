@@ -1,20 +1,14 @@
 const button = document.getElementById("button")
 
-const audio = document.getElementById("audio")
-
-
-
 let clicou = 0
-clicou = pauseAudio()
 
-function playAudio(clicou) {
-    if (clicou %2 === 0) {
+function playOrPauseAudio() {
+    clicou++
+    if (clicou %2 !== 0) {
         audio.play()
-        
-    } 
+        button.style.filter = "hue-rotate(-200deg)"
+    } else {
+        audio.pause()  
+        button.style.filter = "none"
+    }
 }
-
-function pauseAudio() {
-    return clicou++
-}
-console.log(clicou);
